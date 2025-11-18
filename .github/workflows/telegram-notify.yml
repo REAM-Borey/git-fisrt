@@ -10,6 +10,6 @@ jobs:
     steps:
       - name: Send Telegram Message
         run: |
-          curl -s -X POST "https://api.telegram.org/bot${{ secrets.8403928815:AAEsKVB5vO1OquoACKtugWhoud8aMO20GFI }}/sendMessage" \
+          curl -s -X POST "https://api.telegram.org/bot8403928815:AAEsKVB5vO1OquoACKtugWhoud8aMO20GFI/getUpdates/sendMessage" \
           -H "Content-Type: application/json" \
-          -d "{\"chat_id\": \"${{ secrets.1758968042 }}\", \"text\": \"🚀 New push to repo '${{ github.repository }}' by ${{ github.actor }} on branch ${{ github.ref }}\"}"
+          -d "{\"chat_id\": \"${{ secrets.1758968042 }}\", \"text\": \"🚀 New push to repo '${{ github.git-fisrt }}' by ${{ github.main }} on branch ${{ github.ref }}\"}"
