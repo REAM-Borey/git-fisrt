@@ -13,7 +13,7 @@ export default function SignUpForm() {
           {/* First Name */}
           <div>
             <label htmlFor="title" className="block text-sm font-medium text-gray-700 mb-1">
-              title
+              title user name
             </label>
             <input
               type="text"
